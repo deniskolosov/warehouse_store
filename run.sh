@@ -25,3 +25,4 @@ python ./warehouse/warehouse/manage.py migrate
 printf "$script" | python ./warehouse/warehouse/manage.py shell
 
 supervisord -c supervisord.conf
+supervisorctl start all
